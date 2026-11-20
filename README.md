@@ -1,5 +1,7 @@
 # nids-dl-reliability
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24391814.svg)](https://doi.org/10.5281/zenodo.24391814)
+
 Code and raw results for the paper
 
 > **How Reliable Are Deep-Learning Comparisons for Network Intrusion Detection? A Reproducibility and Evaluation-Pitfall Study on Four Benchmarks** (submitted to IEEE Access)
@@ -26,7 +28,7 @@ Code comments and console messages are in Traditional Chinese; identifiers, file
 | `results/v2/` | Raw per-run results: training curves, gradient norms, all metrics, tuning trials, selected hyperparameters (`tuned_hp.json`) |
 | other `*.py` files | Earlier exploratory version of the study (v1), superseded by the `*_v2.py` scripts |
 
-Trained model weights (about 830 MB) are not in this repository; they are archived on Zenodo: **[model weights DOI]**.
+Trained model weights (about 830 MB) are not in this repository; they are archived on Zenodo: [10.5281/zenodo.24391892](https://doi.org/10.5281/zenodo.24391892).
 
 ## Setup
 
