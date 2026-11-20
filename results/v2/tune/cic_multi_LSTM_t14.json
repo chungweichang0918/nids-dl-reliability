@@ -1,0 +1,27 @@
+{
+ "dataset": "cic",
+ "task": "multi",
+ "model": "LSTM",
+ "trial": 14,
+ "hp": {
+  "units_1": 8,
+  "dropout_1": 0.3,
+  "units_2": 128,
+  "dropout_2": 0.2,
+  "units_3": 64,
+  "dense_units": 16,
+  "lr": 0.003,
+  "clipnorm": null
+ },
+ "score": 0.9923222064971924,
+ "val_accuracy": [
+  0.9659017324447632,
+  0.9814611673355103,
+  0.9889385104179382,
+  0.9917888045310974,
+  0.9923222064971924
+ ],
+ "collapses": 0,
+ "seconds": 275,
+ "epochs": 5
+}

@@ -1,0 +1,23 @@
+{
+ "dataset": "cic18",
+ "task": "multi",
+ "model": "CNN-LSTM",
+ "trial": 9,
+ "hp": {
+  "filters": 64,
+  "kernel_size": 7,
+  "units": 64,
+  "dropout": 0.4,
+  "lr": 0.0003,
+  "clipnorm": 1.0
+ },
+ "score": 0.9920762181282043,
+ "val_accuracy": [
+  0.9669038653373718,
+  0.9857878088951111,
+  0.9920762181282043
+ ],
+ "collapses": 0,
+ "seconds": 78,
+ "epochs": 3
+}

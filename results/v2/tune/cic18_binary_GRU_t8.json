@@ -1,0 +1,25 @@
+{
+ "dataset": "cic18",
+ "task": "binary",
+ "model": "GRU",
+ "trial": 8,
+ "hp": {
+  "units_1": 64,
+  "dropout_1": 0.4,
+  "units_2": 50,
+  "dropout_2": 0.2,
+  "units_3": 32,
+  "dense_units": 64,
+  "lr": 0.0003,
+  "clipnorm": null
+ },
+ "score": 0.9841482043266296,
+ "val_accuracy": [
+  0.9653480052947998,
+  0.9760087132453918,
+  0.9841482043266296
+ ],
+ "collapses": 0,
+ "seconds": 91,
+ "epochs": 3
+}

@@ -1,0 +1,182 @@
+{
+ "dataset": "cic18",
+ "model": "CNN",
+ "seed": 2,
+ "hp": {
+  "filters_1": 64,
+  "kernel_size_1": 3,
+  "dropout_1": 0.5,
+  "filters_2": 32,
+  "kernel_size_2": 7,
+  "dropout_2": 0.1,
+  "dense_units": 50,
+  "lr": 0.003,
+  "clipnorm": null
+ },
+ "eps": 1.0,
+ "steps": 3,
+ "epochs": 12,
+ "threat": "consistent",
+ "val_accuracy": [
+  0.9959899235049116,
+  0.9962056090814098,
+  0.9972212159222025,
+  0.9975939541029469,
+  0.997520662887632,
+  0.9977447246030233,
+  0.998081864193472,
+  0.9981174627837679,
+  0.9980692999851324,
+  0.9979834445614777,
+  0.9982179764504855,
+  0.9980357954295598
+ ],
+ "collapses": 0,
+ "seconds": 2288,
+ "tests": {
+  "random": {
+   "accuracy": 0.9979612520626199,
+   "macro_f1": 0.9978849940961696,
+   "recall": {
+    "abnormal": 0.9953900504329308,
+    "normal": 0.9997180183457264
+   },
+   "support": {
+    "abnormal": 242302,
+    "normal": 354633
+   },
+   "confusion_matrix": [
+    [
+     241185,
+     1117
+    ],
+    [
+     100,
+     354533
+    ]
+   ],
+   "detection_rate": 0.9953900504329308,
+   "false_alarm_rate": 0.000281981654273622,
+   "detection_by_attack": {
+    "Botnet Ares": [
+     0.999964875307341,
+     28470
+    ],
+    "DDoS-HOIC": [
+     1.0,
+     59902
+    ],
+    "DDoS-LOIC-HTTP": [
+     0.9999134843320125,
+     57793
+    ],
+    "DDoS-LOIC-UDP": [
+     1.0,
+     501
+    ],
+    "DoS GoldenEye": [
+     1.0,
+     4552
+    ],
+    "DoS Hulk": [
+     1.0,
+     60126
+    ],
+    "DoS Slowloris": [
+     0.9985915492957746,
+     1420
+    ],
+    "Infiltration Communication Victim Attacker": [
+     0.9090909090909091,
+     44
+    ],
+    "Infiltration Dropbox Download": [
+     0.0,
+     15
+    ],
+    "Infiltration NMAP Portscan": [
+     0.8960563108668402,
+     10371
+    ],
+    "SSH-BruteForce": [
+     1.0,
+     19056
+    ],
+    "Web Attack Brute Force": [
+     1.0,
+     22
+    ],
+    "Web Attack SQL": [
+     0.0,
+     11
+    ],
+    "Web Attack XSS": [
+     0.9473684210526315,
+     19
+    ]
+   }
+  }
+ },
+ "robustness": {
+  "pool": 2000,
+  "clean_detection": 0.9953900504329308,
+  "eps": [
+   0.1,
+   0.25,
+   0.5,
+   1.0,
+   2.0
+  ],
+  "pgd": {
+   "realistic": [
+    0.0,
+    0.003,
+    0.006,
+    0.035,
+    0.508
+   ],
+   "consistent": [
+    0.0,
+    0.002,
+    0.0005,
+    0.0005,
+    0.002
+   ],
+   "consistent_notime": [
+    0.0,
+    0.002,
+    0.002,
+    0.002,
+    0.0015
+   ]
+  },
+  "rs": {
+   "realistic": [
+    0.0,
+    0.003,
+    0.011,
+    0.1385,
+    0.8745
+   ],
+   "consistent": [
+    0.0955,
+    0.0135,
+    0.0085,
+    0.0045,
+    0.0045
+   ],
+   "consistent_notime": [
+    0.03,
+    0.011,
+    0.0045,
+    0.003,
+    0.0015
+   ]
+  },
+  "grad_norm": {
+   "realistic": 9.935423851013184,
+   "consistent": 9.868475914001465,
+   "consistent_notime": 8.918944358825684
+  }
+ }
+}

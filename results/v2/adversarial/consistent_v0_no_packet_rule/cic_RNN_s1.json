@@ -1,0 +1,64 @@
+{
+ "dataset": "cic",
+ "model": "RNN",
+ "seed": 1,
+ "eps": [
+  0.1,
+  0.25,
+  0.5,
+  1.0,
+  2.0
+ ],
+ "n_primary": 11,
+ "derived": [
+  "Fwd Packet Length Mean",
+  "Avg Fwd Segment Size",
+  "Packet Length Mean",
+  "Average Packet Size",
+  "Flow Bytes/s",
+  "Flow Packets/s",
+  "Fwd Packets/s",
+  "Bwd Packets/s",
+  "Down/Up Ratio",
+  "Fwd IAT Mean",
+  "Flow IAT Mean",
+  "Max Packet Length",
+  "PSH Flag Count",
+  "URG Flag Count"
+ ],
+ "self_check_max_abs": 7.152557373046875e-07,
+ "standard": {
+  "pool": 2000,
+  "pgd": [
+   0.2195,
+   0.3295,
+   0.5085,
+   0.66,
+   0.7705
+  ],
+  "rs": [
+   0.3435,
+   0.599,
+   0.897,
+   0.9735,
+   0.9975
+  ]
+ },
+ "advtrained": {
+  "pool": 2000,
+  "pgd": [
+   0.2295,
+   0.256,
+   0.244,
+   0.2175,
+   0.2715
+  ],
+  "rs": [
+   0.346,
+   0.391,
+   0.425,
+   0.4945,
+   0.6875
+  ]
+ }
+}

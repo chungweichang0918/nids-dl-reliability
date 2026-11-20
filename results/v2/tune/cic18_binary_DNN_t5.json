@@ -1,0 +1,21 @@
+{
+ "dataset": "cic18",
+ "task": "binary",
+ "model": "DNN",
+ "trial": 5,
+ "hp": {
+  "units_1": 50,
+  "units_2": 50,
+  "lr": 0.003,
+  "clipnorm": 1.0
+ },
+ "score": 0.9985069632530212,
+ "val_accuracy": [
+  0.9968003034591675,
+  0.9986242055892944,
+  0.9985069632530212
+ ],
+ "collapses": 0,
+ "seconds": 2,
+ "epochs": 3
+}

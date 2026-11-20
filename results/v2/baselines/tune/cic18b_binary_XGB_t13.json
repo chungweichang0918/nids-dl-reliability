@@ -1,0 +1,16 @@
+{
+ "dataset": "cic18b",
+ "task": "binary",
+ "model": "XGB",
+ "trial": 13,
+ "hp": {
+  "n_estimators": 100,
+  "max_depth": 6,
+  "learning_rate": 0.3,
+  "subsample": 1.0,
+  "colsample_bytree": 0.8,
+  "min_child_weight": 1
+ },
+ "score": 0.999962323942925,
+ "seconds": 8
+}

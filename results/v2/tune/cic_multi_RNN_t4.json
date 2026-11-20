@@ -1,0 +1,27 @@
+{
+ "dataset": "cic",
+ "task": "multi",
+ "model": "RNN",
+ "trial": 4,
+ "hp": {
+  "units_1": 64,
+  "dropout_1": 0.1,
+  "units_2": 16,
+  "dropout_2": 0.4,
+  "units_3": 128,
+  "dense_units": 64,
+  "lr": 0.003,
+  "clipnorm": 1.0
+ },
+ "score": 0.9929744601249695,
+ "val_accuracy": [
+  0.9923290014266968,
+  0.9935758113861084,
+  0.9935724139213562,
+  0.9940853714942932,
+  0.9929744601249695
+ ],
+ "collapses": 0,
+ "seconds": 433,
+ "epochs": 5
+}

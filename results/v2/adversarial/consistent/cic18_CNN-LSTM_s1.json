@@ -1,0 +1,92 @@
+{
+ "dataset": "cic18",
+ "model": "CNN-LSTM",
+ "seed": 1,
+ "eps": [
+  0.1,
+  0.25,
+  0.5,
+  1.0,
+  2.0
+ ],
+ "n_primary": 11,
+ "derived": [
+  "Fwd Packet Length Mean",
+  "Avg Fwd Segment Size",
+  "Packet Length Mean",
+  "Average Packet Size",
+  "Flow Bytes/s",
+  "Flow Packets/s",
+  "Fwd Packets/s",
+  "Bwd Packets/s",
+  "Down/Up Ratio",
+  "Fwd IAT Mean",
+  "Flow IAT Mean",
+  "Max Packet Length",
+  "PSH Flag Count",
+  "URG Flag Count"
+ ],
+ "self_check_max_abs": 4.76837158203125e-07,
+ "standard": {
+  "pool": 2000,
+  "pgd": [
+   0.3785,
+   0.613,
+   0.816,
+   0.912,
+   0.8965
+  ],
+  "rs": [
+   0.954,
+   0.9835,
+   0.9925,
+   0.995,
+   0.9975
+  ],
+  "pgd_notime": [
+   0.3575,
+   0.461,
+   0.6325,
+   0.7485,
+   0.734
+  ],
+  "rs_notime": [
+   0.9505,
+   0.979,
+   0.9835,
+   0.9935,
+   0.996
+  ]
+ },
+ "advtrained": {
+  "pool": 2000,
+  "pgd": [
+   0.0365,
+   0.0725,
+   0.2135,
+   0.2935,
+   0.3185
+  ],
+  "rs": [
+   0.1555,
+   0.3085,
+   0.771,
+   0.9395,
+   0.91
+  ],
+  "pgd_notime": [
+   0.037,
+   0.092,
+   0.1805,
+   0.223,
+   0.2535
+  ],
+  "rs_notime": [
+   0.136,
+   0.3045,
+   0.6555,
+   0.8075,
+   0.884
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "setting": "drop_plv",
+ "dropped": [
+  "Packet Length Variance"
+ ],
+ "seed": 9,
+ "accuracy": 0.818929855808272,
+ "detection_rate": 0.41768245844288665,
+ "false_alarm_rate": 1.5845161085881188e-05,
+ "macro_f1": 0.7365507084356298,
+ "detection_by_attack": {
+  "Botnet": [
+   0.0,
+   736
+  ],
+  "DDoS": [
+   0.9982027242916001,
+   95144
+  ],
+  "Infiltration": [
+   0.0,
+   36
+  ],
+  "Infiltration Portscan": [
+   9.713689016246146e-05,
+   41179
+  ],
+  "PortScan": [
+   0.001975281394835577,
+   90620
+  ],
+  "Web Attack Brute Force": [
+   0.0,
+   73
+  ],
+  "Web Attack SQL Injection": [
+   0.0,
+   13
+  ],
+  "Web Attack XSS": [
+   0.0,
+   18
+  ]
+ },
+ "collapses": 0,
+ "seconds": 66
+}

@@ -1,0 +1,150 @@
+{
+ "dataset": "cic18",
+ "model": "LSTM",
+ "seed": 1,
+ "hp": {
+  "units_1": 32,
+  "dropout_1": 0.3,
+  "units_2": 64,
+  "dropout_2": 0.3,
+  "units_3": 64,
+  "dense_units": 25,
+  "lr": 0.003,
+  "clipnorm": null
+ },
+ "eps": 1.0,
+ "steps": 3,
+ "epochs": 12,
+ "val_accuracy": [
+  0.9777383168567702,
+  0.9945596977889087,
+  0.9956653481228026,
+  0.9964778335954367,
+  0.9970788215610191,
+  0.9430380674572346,
+  0.9690857653801616,
+  0.9341740184735743,
+  0.9817902740463242,
+  0.992023821739012,
+  0.9954496625463043,
+  0.9962537718800453
+ ],
+ "collapses": 2,
+ "seconds": 3699,
+ "tests": {
+  "random": {
+   "accuracy": 0.9961721125415665,
+   "macro_f1": 0.996030396560583,
+   "recall": {
+    "abnormal": 0.9943417718384495,
+    "normal": 0.9974226876799396
+   },
+   "support": {
+    "abnormal": 242302,
+    "normal": 354633
+   },
+   "confusion_matrix": [
+    [
+     240931,
+     1371
+    ],
+    [
+     914,
+     353719
+    ]
+   ],
+   "detection_rate": 0.9943417718384495,
+   "false_alarm_rate": 0.002577312320060421,
+   "detection_by_attack": {
+    "Botnet Ares": [
+     0.999964875307341,
+     28470
+    ],
+    "DDoS-HOIC": [
+     1.0,
+     59902
+    ],
+    "DDoS-LOIC-HTTP": [
+     1.0,
+     57793
+    ],
+    "DDoS-LOIC-UDP": [
+     0.9960079840319361,
+     501
+    ],
+    "DoS GoldenEye": [
+     0.9916520210896309,
+     4552
+    ],
+    "DoS Hulk": [
+     0.9999334730399494,
+     60126
+    ],
+    "DoS Slowloris": [
+     0.9507042253521126,
+     1420
+    ],
+    "Infiltration Communication Victim Attacker": [
+     0.0,
+     44
+    ],
+    "Infiltration Dropbox Download": [
+     0.0,
+     15
+    ],
+    "Infiltration NMAP Portscan": [
+     0.885739080127278,
+     10371
+    ],
+    "SSH-BruteForce": [
+     1.0,
+     19056
+    ],
+    "Web Attack Brute Force": [
+     1.0,
+     22
+    ],
+    "Web Attack SQL": [
+     0.0,
+     11
+    ],
+    "Web Attack XSS": [
+     0.9473684210526315,
+     19
+    ]
+   }
+  }
+ },
+ "robustness": {
+  "pool": 2000,
+  "clean_detection": 0.9943417718384495,
+  "eps": [
+   0.1,
+   0.25,
+   0.5,
+   1.0,
+   2.0
+  ],
+  "pgd": {
+   "realistic": [
+    0.0,
+    0.0,
+    0.003,
+    0.001,
+    0.117
+   ]
+  },
+  "rs": {
+   "realistic": [
+    0.0,
+    0.0005,
+    0.005,
+    0.007,
+    0.585
+   ]
+  },
+  "grad_norm": {
+   "realistic": 3.499577522277832
+  }
+ }
+}

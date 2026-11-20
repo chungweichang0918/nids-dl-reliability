@@ -1,0 +1,15 @@
+{
+ "dataset": "cic18b",
+ "task": "binary",
+ "model": "RF",
+ "trial": 4,
+ "hp": {
+  "n_estimators": 300,
+  "max_depth": null,
+  "min_samples_leaf": 2,
+  "max_features": "sqrt",
+  "max_samples": 1.0
+ },
+ "score": 0.9999288341144138,
+ "seconds": 313
+}

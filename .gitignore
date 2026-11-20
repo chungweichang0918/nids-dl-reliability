@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+data/
+*.zip
+*.h5
+*.docx
+*.pdf

@@ -1,0 +1,226 @@
+{
+ "cic18/binary/DNN": {
+  "n": 20,
+  "score": 0.9985069632530212,
+  "paper_score": 0.9973950386047363,
+  "trial": 5,
+  "hp": {
+   "units_1": 50,
+   "units_2": 50,
+   "lr": 0.003,
+   "clipnorm": 1.0
+  }
+ },
+ "cic18/binary/RNN": {
+  "n": 20,
+  "score": 0.9989697337150574,
+  "paper_score": 0.9956925511360168,
+  "trial": 4,
+  "hp": {
+   "units_1": 32,
+   "dropout_1": 0.2,
+   "units_2": 128,
+   "dropout_2": 0.4,
+   "units_3": 16,
+   "dense_units": 16,
+   "lr": 0.001,
+   "clipnorm": null
+  }
+ },
+ "cic18/multi/DNN": {
+  "n": 20,
+  "score": 0.9982724189758301,
+  "paper_score": 0.9969050288200378,
+  "trial": 1,
+  "hp": {
+   "units_1": 64,
+   "units_2": 128,
+   "lr": 0.003,
+   "clipnorm": 1.0
+  }
+ },
+ "cic18/multi/RNN": {
+  "n": 20,
+  "score": 0.9987163543701172,
+  "paper_score": 0.9977991580963135,
+  "trial": 5,
+  "hp": {
+   "units_1": 32,
+   "dropout_1": 0.1,
+   "units_2": 128,
+   "dropout_2": 0.1,
+   "units_3": 8,
+   "dense_units": 32,
+   "lr": 0.003,
+   "clipnorm": 1.0
+  }
+ },
+ "cic/binary/DNN": {
+  "n": 20,
+  "score": 0.999262809753418,
+  "paper_score": 0.9980941414833069,
+  "trial": 16,
+  "hp": {
+   "units_1": 32,
+   "units_2": 64,
+   "lr": 0.003,
+   "clipnorm": null
+  }
+ },
+ "cic/binary/RNN": {
+  "n": 20,
+  "score": 0.9994666576385498,
+  "paper_score": 0.998780369758606,
+  "trial": 1,
+  "hp": {
+   "units_1": 32,
+   "dropout_1": 0.2,
+   "units_2": 32,
+   "dropout_2": 0.2,
+   "units_3": 128,
+   "dense_units": 50,
+   "lr": 0.001,
+   "clipnorm": 1.0
+  }
+ },
+ "cic/multi/DNN": {
+  "n": 20,
+  "score": 0.9946832656860352,
+  "paper_score": 0.9917310476303101,
+  "trial": 16,
+  "hp": {
+   "units_1": 128,
+   "units_2": 50,
+   "lr": 0.003,
+   "clipnorm": 1.0
+  }
+ },
+ "cic/multi/RNN": {
+  "n": 20,
+  "score": 0.9938713312149048,
+  "paper_score": 0.9938713312149048,
+  "trial": 0,
+  "hp": {
+   "units_1": 64,
+   "dropout_1": 0.1,
+   "units_2": 32,
+   "dropout_2": 0.2,
+   "units_3": 64,
+   "dense_units": 25,
+   "lr": 0.001,
+   "clipnorm": null
+  }
+ },
+ "nsl/binary/DNN": {
+  "n": 20,
+  "score": 0.995286762714386,
+  "paper_score": 0.9922603964805603,
+  "trial": 10,
+  "hp": {
+   "units_1": 128,
+   "units_2": 8,
+   "lr": 0.003,
+   "clipnorm": 1.0
+  }
+ },
+ "nsl/binary/RNN": {
+  "n": 20,
+  "score": 0.9944929480552673,
+  "paper_score": 0.9914169311523438,
+  "trial": 16,
+  "hp": {
+   "units_1": 128,
+   "dropout_1": 0.1,
+   "units_2": 32,
+   "dropout_2": 0.3,
+   "units_3": 128,
+   "dense_units": 25,
+   "lr": 0.001,
+   "clipnorm": 1.0
+  }
+ },
+ "nsl/multi/DNN": {
+  "n": 20,
+  "score": 0.9946417808532715,
+  "paper_score": 0.9778229594230652,
+  "trial": 19,
+  "hp": {
+   "units_1": 128,
+   "units_2": 16,
+   "lr": 0.003,
+   "clipnorm": 1.0
+  }
+ },
+ "nsl/multi/RNN": {
+  "n": 20,
+  "score": 0.9926076531410217,
+  "paper_score": 0.9926076531410217,
+  "trial": 0,
+  "hp": {
+   "units_1": 64,
+   "dropout_1": 0.1,
+   "units_2": 32,
+   "dropout_2": 0.2,
+   "units_3": 64,
+   "dense_units": 25,
+   "lr": 0.001,
+   "clipnorm": null
+  }
+ },
+ "unsw/binary/DNN": {
+  "n": 20,
+  "score": 0.9446088075637817,
+  "paper_score": 0.941899836063385,
+  "trial": 3,
+  "hp": {
+   "units_1": 32,
+   "units_2": 128,
+   "lr": 0.003,
+   "clipnorm": null
+  }
+ },
+ "unsw/binary/RNN": {
+  "n": 20,
+  "score": 0.9428265690803528,
+  "paper_score": 0.9385136365890503,
+  "trial": 7,
+  "hp": {
+   "units_1": 64,
+   "dropout_1": 0.1,
+   "units_2": 64,
+   "dropout_2": 0.2,
+   "units_3": 128,
+   "dense_units": 25,
+   "lr": 0.0003,
+   "clipnorm": 1.0
+  }
+ },
+ "unsw/multi/DNN": {
+  "n": 20,
+  "score": 0.8025307655334473,
+  "paper_score": 0.7762252688407898,
+  "trial": 15,
+  "hp": {
+   "units_1": 128,
+   "units_2": 50,
+   "lr": 0.003,
+   "clipnorm": 1.0
+  }
+ },
+ "unsw/multi/RNN": {
+  "n": 20,
+  "score": 0.7986454963684082,
+  "paper_score": 0.7951167225837708,
+  "trial": 7,
+  "hp": {
+   "units_1": 64,
+   "dropout_1": 0.5,
+   "units_2": 128,
+   "dropout_2": 0.1,
+   "units_3": 32,
+   "dense_units": 32,
+   "lr": 0.003,
+   "clipnorm": 1.0
+  }
+ }
+}

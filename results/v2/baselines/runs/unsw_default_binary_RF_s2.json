@@ -1,0 +1,66 @@
+{
+ "dataset": "unsw",
+ "condition": "default",
+ "task": "binary",
+ "model": "RF",
+ "seed": 2,
+ "hp": {
+  "n_estimators": 200,
+  "max_depth": 40,
+  "min_samples_leaf": 1,
+  "max_features": 0.5,
+  "max_samples": 1.0
+ },
+ "val_accuracy": 0.959329887720549,
+ "tests": {
+  "random": {
+   "accuracy": 0.9591080187065131,
+   "macro_f1": 0.9523411060959481,
+   "recall": {
+    "abnormal": 0.9787731907070032,
+    "normal": 0.9168462643678161
+   },
+   "support": {
+    "abnormal": 23932,
+    "normal": 11136
+   },
+   "confusion_matrix": [
+    [
+     23424,
+     508
+    ],
+    [
+     926,
+     10210
+    ]
+   ],
+   "detection_rate": 0.9787731907070032,
+   "false_alarm_rate": 0.08315373563218387
+  },
+  "official": {
+   "accuracy": 0.8703663217218093,
+   "macro_f1": 0.864004696238598,
+   "recall": {
+    "abnormal": 0.9867863760698844,
+    "normal": 0.7277297297297297
+   },
+   "support": {
+    "abnormal": 45332,
+    "normal": 37000
+   },
+   "confusion_matrix": [
+    [
+     44733,
+     599
+    ],
+    [
+     10074,
+     26926
+    ]
+   ],
+   "detection_rate": 0.9867863760698844,
+   "false_alarm_rate": 0.2722702702702703
+  }
+ },
+ "seconds": 50
+}

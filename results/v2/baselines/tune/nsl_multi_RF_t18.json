@@ -1,0 +1,15 @@
+{
+ "dataset": "nsl",
+ "task": "multi",
+ "model": "RF",
+ "trial": 18,
+ "hp": {
+  "n_estimators": 100,
+  "max_depth": null,
+  "min_samples_leaf": 2,
+  "max_features": 0.5,
+  "max_samples": 0.6
+ },
+ "score": 0.9986604485016869,
+ "seconds": 9
+}

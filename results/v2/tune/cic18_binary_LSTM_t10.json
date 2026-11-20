@@ -1,0 +1,25 @@
+{
+ "dataset": "cic18",
+ "task": "binary",
+ "model": "LSTM",
+ "trial": 10,
+ "hp": {
+  "units_1": 64,
+  "dropout_1": 0.4,
+  "units_2": 128,
+  "dropout_2": 0.5,
+  "units_3": 50,
+  "dense_units": 25,
+  "lr": 0.0003,
+  "clipnorm": 1.0
+ },
+ "score": 0.991050124168396,
+ "val_accuracy": [
+  0.9557657241821289,
+  0.9855239391326904,
+  0.991050124168396
+ ],
+ "collapses": 0,
+ "seconds": 105,
+ "epochs": 3
+}

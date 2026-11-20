@@ -1,0 +1,74 @@
+{
+ "dataset": "cic18",
+ "condition": "temporal",
+ "task": "binary",
+ "model": "RF",
+ "seed": 1,
+ "hp": {
+  "n_estimators": 300,
+  "max_depth": null,
+  "min_samples_leaf": 1,
+  "max_features": 0.5,
+  "max_samples": 1.0
+ },
+ "val_accuracy": 1.0,
+ "tests": {
+  "temporal": {
+   "accuracy": 0.824531235065078,
+   "macro_f1": 0.4541945124396392,
+   "recall": {
+    "abnormal": 0.002307242691167875,
+    "normal": 0.999996717508808
+   },
+   "support": {
+    "abnormal": 195038,
+    "normal": 913940
+   },
+   "confusion_matrix": [
+    [
+     450,
+     194588
+    ],
+    [
+     3,
+     913937
+    ]
+   ],
+   "detection_rate": 0.002307242691167875,
+   "false_alarm_rate": 3.282491191969328e-06,
+   "detection_seen": NaN,
+   "detection_unseen": 0.002307242691167875,
+   "detection_by_attack": {
+    "Botnet Ares": [
+     0.0,
+     142921
+    ],
+    "Infiltration Communication Victim Attacker": [
+     0.0,
+     204
+    ],
+    "Infiltration Dropbox Download": [
+     0.0,
+     85
+    ],
+    "Infiltration NMAP Portscan": [
+     0.008730235716364342,
+     51545
+    ],
+    "Web Attack Brute Force": [
+     0.0,
+     131
+    ],
+    "Web Attack SQL": [
+     0.0,
+     39
+    ],
+    "Web Attack XSS": [
+     0.0,
+     113
+    ]
+   }
+  }
+ },
+ "seconds": 573
+}

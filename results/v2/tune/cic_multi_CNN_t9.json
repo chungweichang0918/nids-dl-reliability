@@ -1,0 +1,28 @@
+{
+ "dataset": "cic",
+ "task": "multi",
+ "model": "CNN",
+ "trial": 9,
+ "hp": {
+  "filters_1": 16,
+  "kernel_size_1": 3,
+  "dropout_1": 0.3,
+  "filters_2": 8,
+  "kernel_size_2": 7,
+  "dropout_2": 0.1,
+  "dense_units": 50,
+  "lr": 0.0003,
+  "clipnorm": null
+ },
+ "score": 0.9776426553726196,
+ "val_accuracy": [
+  0.8811944723129272,
+  0.9068913459777832,
+  0.958519458770752,
+  0.9640842080116272,
+  0.9776426553726196
+ ],
+ "collapses": 0,
+ "seconds": 27,
+ "epochs": 5
+}

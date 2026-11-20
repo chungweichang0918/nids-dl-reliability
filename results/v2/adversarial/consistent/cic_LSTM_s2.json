@@ -1,0 +1,92 @@
+{
+ "dataset": "cic",
+ "model": "LSTM",
+ "seed": 2,
+ "eps": [
+  0.1,
+  0.25,
+  0.5,
+  1.0,
+  2.0
+ ],
+ "n_primary": 11,
+ "derived": [
+  "Fwd Packet Length Mean",
+  "Avg Fwd Segment Size",
+  "Packet Length Mean",
+  "Average Packet Size",
+  "Flow Bytes/s",
+  "Flow Packets/s",
+  "Fwd Packets/s",
+  "Bwd Packets/s",
+  "Down/Up Ratio",
+  "Fwd IAT Mean",
+  "Flow IAT Mean",
+  "Max Packet Length",
+  "PSH Flag Count",
+  "URG Flag Count"
+ ],
+ "self_check_max_abs": 7.152557373046875e-07,
+ "standard": {
+  "pool": 2000,
+  "pgd": [
+   0.044,
+   0.1975,
+   0.4615,
+   0.6195,
+   0.668
+  ],
+  "rs": [
+   0.121,
+   0.609,
+   0.969,
+   0.995,
+   1.0
+  ],
+  "pgd_notime": [
+   0.0035,
+   0.0975,
+   0.305,
+   0.4715,
+   0.522
+  ],
+  "rs_notime": [
+   0.025,
+   0.2865,
+   0.674,
+   0.774,
+   0.8605
+  ]
+ },
+ "advtrained": {
+  "pool": 2000,
+  "pgd": [
+   0.074,
+   0.175,
+   0.253,
+   0.377,
+   0.504
+  ],
+  "rs": [
+   0.327,
+   0.507,
+   0.713,
+   0.843,
+   0.961
+  ],
+  "pgd_notime": [
+   0.0065,
+   0.0865,
+   0.187,
+   0.2715,
+   0.295
+  ],
+  "rs_notime": [
+   0.0275,
+   0.19,
+   0.408,
+   0.5625,
+   0.6745
+  ]
+ }
+}

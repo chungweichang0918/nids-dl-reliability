@@ -1,0 +1,325 @@
+{
+ "all": {
+  "n": 10,
+  "dropped": [],
+  "accuracy": {
+   "mean": 82.20499382425396,
+   "sd": 0.3910139953130507,
+   "min": 81.49637302870869,
+   "max": 82.77492305907562,
+   "values": [
+    81.89,
+    82.5,
+    81.5,
+    81.96,
+    81.9,
+    82.25,
+    82.28,
+    82.39,
+    82.61,
+    82.77
+   ]
+  },
+  "detection": {
+   "mean": 42.776151242872636,
+   "sd": 1.2564016777630795
+  },
+  "false_alarm": 0.0035849676956789533,
+  "n_above_95": 0,
+  "by_attack": {
+   "Botnet": 0.0,
+   "DDoS": 99.10987555705037,
+   "Infiltration": 0.2777777777777778,
+   "Infiltration Portscan": 1.0357220913572451,
+   "PortScan": 3.010483337011697,
+   "Web Attack Brute Force": 0.0,
+   "Web Attack SQL Injection": 3.076923076923077,
+   "Web Attack XSS": 0.0
+  }
+ },
+ "drop_plv": {
+  "n": 10,
+  "dropped": [
+   "Packet Length Variance"
+  ],
+  "accuracy": {
+   "mean": 82.54001269269352,
+   "sd": 0.46052173883923064,
+   "min": 81.8929855808272,
+   "max": 83.369705406678,
+   "values": [
+    81.98,
+    82.8,
+    82.32,
+    82.53,
+    82.22,
+    83.37,
+    82.64,
+    83.04,
+    82.6,
+    81.89
+   ]
+  },
+  "detection": {
+   "mean": 43.856745925493485,
+   "sd": 1.4872042580006872
+  },
+  "false_alarm": 0.004991225742049243,
+  "n_above_95": 0,
+  "by_attack": {
+   "Botnet": 0.0,
+   "DDoS": 99.39418145127385,
+   "Infiltration": 0.2777777777777778,
+   "Infiltration Portscan": 1.6622550329051216,
+   "PortScan": 5.144228647097771,
+   "Web Attack Brute Force": 0.0,
+   "Web Attack SQL Injection": 0.7692307692307693,
+   "Web Attack XSS": 0.0
+  }
+ },
+ "drop_port": {
+  "n": 10,
+  "dropped": [
+   "Destination Port"
+  ],
+  "accuracy": {
+   "mean": 86.7840126653974,
+   "sd": 4.742123270617649,
+   "min": 81.35634395834613,
+   "max": 94.45506718256324,
+   "values": [
+    92.27,
+    82.16,
+    81.36,
+    91.78,
+    82.68,
+    87.71,
+    83.28,
+    87.9,
+    94.46,
+    84.24
+   ]
+  },
+  "detection": {
+   "mean": 57.57935027368218,
+   "sd": 15.284451407898423
+  },
+  "false_alarm": 0.03800858015472697,
+  "n_above_95": 0,
+  "by_attack": {
+   "Botnet": 0.0,
+   "DDoS": 98.25086185150928,
+   "Infiltration": 0.0,
+   "Infiltration Portscan": 12.64722309915248,
+   "PortScan": 35.851578018097555,
+   "Web Attack Brute Force": 0.0,
+   "Web Attack SQL Injection": 1.5384615384615385,
+   "Web Attack XSS": 0.0
+  }
+ },
+ "drop_rst": {
+  "n": 10,
+  "dropped": [
+   "RST Flag Count"
+  ],
+  "accuracy": {
+   "mean": 82.54480316089013,
+   "sd": 0.15217472565184773,
+   "min": 82.33845817893967,
+   "max": 82.72933854689131,
+   "values": [
+    82.41,
+    82.69,
+    82.4,
+    82.34,
+    82.47,
+    82.61,
+    82.66,
+    82.42,
+    82.72,
+    82.73
+   ]
+  },
+  "detection": {
+   "mean": 43.87553276943538,
+   "sd": 0.4895228736794231
+  },
+  "false_alarm": 0.006516322496565863,
+  "n_above_95": 0,
+  "by_attack": {
+   "Botnet": 0.0,
+   "DDoS": 98.91249054065418,
+   "Infiltration": 0.0,
+   "Infiltration Portscan": 3.5566672332985263,
+   "PortScan": 4.836018538953874,
+   "Web Attack Brute Force": 0.0,
+   "Web Attack SQL Injection": 3.846153846153846,
+   "Web Attack XSS": 0.0
+  }
+ },
+ "drop_plv_port": {
+  "n": 10,
+  "dropped": [
+   "Packet Length Variance",
+   "Destination Port"
+  ],
+  "accuracy": {
+   "mean": 86.15468708416073,
+   "sd": 4.040751544257706,
+   "min": 81.49773783446271,
+   "max": 94.92933718208556,
+   "values": [
+    83.22,
+    87.85,
+    86.91,
+    81.5,
+    83.01,
+    86.81,
+    87.89,
+    81.66,
+    87.77,
+    94.93
+   ]
+  },
+  "detection": {
+   "mean": 55.53808066930327,
+   "sd": 12.983252848436532
+  },
+  "false_alarm": 0.03022464477129505,
+  "n_above_95": 0,
+  "by_attack": {
+   "Botnet": 0.0,
+   "DDoS": 98.18832506516438,
+   "Infiltration": 0.0,
+   "Infiltration Portscan": 8.706622307486827,
+   "PortScan": 32.57592143014787,
+   "Web Attack Brute Force": 0.0,
+   "Web Attack SQL Injection": 3.076923076923077,
+   "Web Attack XSS": 0.0
+  }
+ },
+ "drop_plv_rst": {
+  "n": 10,
+  "dropped": [
+   "Packet Length Variance",
+   "RST Flag Count"
+  ],
+  "accuracy": {
+   "mean": 82.54410710995556,
+   "sd": 0.43254289509509597,
+   "min": 81.9576773735678,
+   "max": 83.318798152053,
+   "values": [
+    82.43,
+    82.97,
+    82.06,
+    82.73,
+    82.36,
+    82.49,
+    81.96,
+    82.22,
+    83.32,
+    82.91
+   ]
+  },
+  "detection": {
+   "mean": 43.874347618065215,
+   "sd": 1.3921112595770355
+  },
+  "false_alarm": 0.006991677329140078,
+  "n_above_95": 0,
+  "by_attack": {
+   "Botnet": 0.0,
+   "DDoS": 98.73381400824013,
+   "Infiltration": 0.5555555555555556,
+   "Infiltration Portscan": 3.5304402729546616,
+   "PortScan": 5.03266387111013,
+   "Web Attack Brute Force": 0.0,
+   "Web Attack SQL Injection": 1.5384615384615385,
+   "Web Attack XSS": 0.0
+  }
+ },
+ "drop_port_rst": {
+  "n": 10,
+  "dropped": [
+   "Destination Port",
+   "RST Flag Count"
+  ],
+  "accuracy": {
+   "mean": 94.508949713732,
+   "sd": 2.843640502339614,
+   "min": 87.88502876328127,
+   "max": 98.23585208235238,
+   "values": [
+    93.07,
+    94.44,
+    87.89,
+    96.04,
+    95.67,
+    92.75,
+    94.47,
+    96.33,
+    98.24,
+    96.19
+   ]
+  },
+  "detection": {
+   "mean": 82.75060464667126,
+   "sd": 9.286772277412853
+  },
+  "false_alarm": 0.18534877180194975,
+  "n_above_95": 5,
+  "by_attack": {
+   "Botnet": 0.0,
+   "DDoS": 96.58654250399395,
+   "Infiltration": 0.0,
+   "Infiltration Portscan": 60.62823283712572,
+   "PortScan": 79.07592143014787,
+   "Web Attack Brute Force": 0.0,
+   "Web Attack SQL Injection": 4.615384615384615,
+   "Web Attack XSS": 0.0
+  }
+ },
+ "drop_top3": {
+  "n": 10,
+  "dropped": [
+   "Packet Length Variance",
+   "Destination Port",
+   "RST Flag Count"
+  ],
+  "accuracy": {
+   "mean": 93.57190137913621,
+   "sd": 4.916171369044563,
+   "min": 81.99712025985902,
+   "max": 98.28143659453669,
+   "values": [
+    98.05,
+    98.28,
+    95.04,
+    95.21,
+    89.94,
+    82.0,
+    97.33,
+    95.62,
+    92.78,
+    91.47
+   ]
+  },
+  "detection": {
+   "mean": 79.78017636808167,
+   "sd": 16.049875069034815
+  },
+  "false_alarm": 0.20487793284028388,
+  "n_above_95": 6,
+  "by_attack": {
+   "Botnet": 0.0,
+   "DDoS": 98.43195577230304,
+   "Infiltration": 0.0,
+   "Infiltration Portscan": 55.68590786565968,
+   "PortScan": 71.91646435665415,
+   "Web Attack Brute Force": 0.0,
+   "Web Attack SQL Injection": 5.384615384615385,
+   "Web Attack XSS": 0.0
+  }
+ }
+}

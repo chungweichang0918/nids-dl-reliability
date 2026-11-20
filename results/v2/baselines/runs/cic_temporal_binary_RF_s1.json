@@ -1,0 +1,78 @@
+{
+ "dataset": "cic",
+ "condition": "temporal",
+ "task": "binary",
+ "model": "RF",
+ "seed": 1,
+ "hp": {
+  "n_estimators": 100,
+  "max_depth": null,
+  "min_samples_leaf": 1,
+  "max_features": "sqrt",
+  "max_samples": 1.0
+ },
+ "val_accuracy": 0.9999819333158688,
+ "tests": {
+  "temporal": {
+   "accuracy": 0.8182611009888018,
+   "macro_f1": 0.7352823987159631,
+   "recall": {
+    "abnormal": 0.4155052914813953,
+    "normal": 0.9999960387097285
+   },
+   "support": {
+    "abnormal": 227819,
+    "normal": 504886
+   },
+   "confusion_matrix": [
+    [
+     94660,
+     133159
+    ],
+    [
+     2,
+     504884
+    ]
+   ],
+   "detection_rate": 0.4155052914813953,
+   "false_alarm_rate": 3.961290271470297e-06,
+   "detection_seen": NaN,
+   "detection_unseen": 0.4155052914813953,
+   "detection_by_attack": {
+    "Botnet": [
+     0.0,
+     736
+    ],
+    "DDoS": [
+     0.9940301017405196,
+     95144
+    ],
+    "Infiltration": [
+     0.0,
+     36
+    ],
+    "Infiltration Portscan": [
+     0.0,
+     41179
+    ],
+    "PortScan": [
+     0.0009269476936658574,
+     90620
+    ],
+    "Web Attack Brute Force": [
+     0.0,
+     73
+    ],
+    "Web Attack SQL Injection": [
+     0.0,
+     13
+    ],
+    "Web Attack XSS": [
+     0.0,
+     18
+    ]
+   }
+  }
+ },
+ "seconds": 26
+}

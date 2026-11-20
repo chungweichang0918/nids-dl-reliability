@@ -1,0 +1,106 @@
+{
+ "dataset": "cic18b",
+ "condition": "improved",
+ "task": "multi",
+ "model": "XGB",
+ "seed": 3,
+ "hp": {
+  "n_estimators": 200,
+  "max_depth": 9,
+  "learning_rate": 0.1,
+  "subsample": 1.0,
+  "colsample_bytree": 0.5,
+  "min_child_weight": 1
+ },
+ "val_accuracy": 0.999960230828643,
+ "tests": {
+  "random": {
+   "accuracy": 0.9999648356653427,
+   "macro_f1": 0.9955551784848676,
+   "recall": {
+    "Benign": 0.9999915412182337,
+    "DoS": 1.0,
+    "DDoS": 1.0,
+    "BruteForce": 1.0,
+    "WebAttack": 0.9411764705882353,
+    "Botnet": 1.0,
+    "Infiltration": 0.9986470815616544
+   },
+   "support": {
+    "Benign": 354661,
+    "DoS": 66046,
+    "DDoS": 118321,
+    "BruteForce": 18958,
+    "WebAttack": 68,
+    "Botnet": 28794,
+    "Infiltration": 10348
+   },
+   "confusion_matrix": [
+    [
+     354658,
+     1,
+     0,
+     0,
+     0,
+     0,
+     2
+    ],
+    [
+     0,
+     66046,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     118321,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     18958,
+     0,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0,
+     0,
+     64,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     28794,
+     0
+    ],
+    [
+     14,
+     0,
+     0,
+     0,
+     0,
+     0,
+     10334
+    ]
+   ]
+  }
+ },
+ "seconds": 66
+}

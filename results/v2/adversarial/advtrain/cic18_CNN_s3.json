@@ -1,0 +1,151 @@
+{
+ "dataset": "cic18",
+ "model": "CNN",
+ "seed": 3,
+ "hp": {
+  "filters_1": 64,
+  "kernel_size_1": 3,
+  "dropout_1": 0.5,
+  "filters_2": 32,
+  "kernel_size_2": 7,
+  "dropout_2": 0.1,
+  "dense_units": 50,
+  "lr": 0.003,
+  "clipnorm": null
+ },
+ "eps": 1.0,
+ "steps": 3,
+ "epochs": 12,
+ "val_accuracy": [
+  0.9835932379430715,
+  0.9745993588065678,
+  0.9730895597710801,
+  0.9914144576345365,
+  0.994450807983298,
+  0.9957553916159038,
+  0.9962181732897495,
+  0.9966013816441104,
+  0.9968254433595017,
+  0.9962265494286426,
+  0.9483631977585453,
+  0.9483652917932686
+ ],
+ "collapses": 0,
+ "seconds": 2535,
+ "tests": {
+  "random": {
+   "accuracy": 0.9483628870815081,
+   "macro_f1": 0.9452155529903049,
+   "recall": {
+    "abnormal": 0.8729478089326543,
+    "normal": 0.9998900271548333
+   },
+   "support": {
+    "abnormal": 242302,
+    "normal": 354633
+   },
+   "confusion_matrix": [
+    [
+     211517,
+     30785
+    ],
+    [
+     39,
+     354594
+    ]
+   ],
+   "detection_rate": 0.8729478089326543,
+   "false_alarm_rate": 0.0001099728451666726,
+   "detection_by_attack": {
+    "Botnet Ares": [
+     0.006322444678609062,
+     28470
+    ],
+    "DDoS-HOIC": [
+     0.9999833060665754,
+     59902
+    ],
+    "DDoS-LOIC-HTTP": [
+     0.9998961811984151,
+     57793
+    ],
+    "DDoS-LOIC-UDP": [
+     1.0,
+     501
+    ],
+    "DoS GoldenEye": [
+     0.9887961335676626,
+     4552
+    ],
+    "DoS Hulk": [
+     0.9958420649968399,
+     60126
+    ],
+    "DoS Slowloris": [
+     0.9901408450704225,
+     1420
+    ],
+    "Infiltration Communication Victim Attacker": [
+     0.9772727272727273,
+     44
+    ],
+    "Infiltration Dropbox Download": [
+     0.06666666666666667,
+     15
+    ],
+    "Infiltration NMAP Portscan": [
+     0.7930768489056021,
+     10371
+    ],
+    "SSH-BruteForce": [
+     1.0,
+     19056
+    ],
+    "Web Attack Brute Force": [
+     1.0,
+     22
+    ],
+    "Web Attack SQL": [
+     0.0,
+     11
+    ],
+    "Web Attack XSS": [
+     0.9473684210526315,
+     19
+    ]
+   }
+  }
+ },
+ "robustness": {
+  "pool": 2000,
+  "clean_detection": 0.8729478089326543,
+  "eps": [
+   0.1,
+   0.25,
+   0.5,
+   1.0,
+   2.0
+  ],
+  "pgd": {
+   "realistic": [
+    0.0005,
+    0.001,
+    0.001,
+    0.001,
+    0.0055
+   ]
+  },
+  "rs": {
+   "realistic": [
+    0.0005,
+    0.001,
+    0.0015,
+    0.0015,
+    0.013
+   ]
+  },
+  "grad_norm": {
+   "realistic": 4.217924118041992
+  }
+ }
+}

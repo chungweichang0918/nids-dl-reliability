@@ -1,0 +1,100 @@
+{
+ "dataset": "cic18",
+ "condition": "improved",
+ "task": "binary",
+ "model": "RF",
+ "seed": 1,
+ "hp": {
+  "n_estimators": 300,
+  "max_depth": null,
+  "min_samples_leaf": 1,
+  "max_features": 0.5,
+  "max_samples": 1.0
+ },
+ "val_accuracy": 0.9999518373022188,
+ "tests": {
+  "random": {
+   "accuracy": 0.999966495514587,
+   "macro_f1": 0.9999652654210669,
+   "recall": {
+    "abnormal": 0.9999504750270324,
+    "normal": 0.9999774414676581
+   },
+   "support": {
+    "abnormal": 242302,
+    "normal": 354633
+   },
+   "confusion_matrix": [
+    [
+     242290,
+     12
+    ],
+    [
+     8,
+     354625
+    ]
+   ],
+   "detection_rate": 0.9999504750270324,
+   "false_alarm_rate": 2.255853234189864e-05,
+   "detection_by_attack": {
+    "Botnet Ares": [
+     1.0,
+     28470
+    ],
+    "DDoS-HOIC": [
+     1.0,
+     59902
+    ],
+    "DDoS-LOIC-HTTP": [
+     1.0,
+     57793
+    ],
+    "DDoS-LOIC-UDP": [
+     1.0,
+     501
+    ],
+    "DoS GoldenEye": [
+     1.0,
+     4552
+    ],
+    "DoS Hulk": [
+     1.0,
+     60126
+    ],
+    "DoS Slowloris": [
+     1.0,
+     1420
+    ],
+    "Infiltration Communication Victim Attacker": [
+     1.0,
+     44
+    ],
+    "Infiltration Dropbox Download": [
+     0.4666666666666667,
+     15
+    ],
+    "Infiltration NMAP Portscan": [
+     0.9998071545656156,
+     10371
+    ],
+    "SSH-BruteForce": [
+     1.0,
+     19056
+    ],
+    "Web Attack Brute Force": [
+     1.0,
+     22
+    ],
+    "Web Attack SQL": [
+     0.9090909090909091,
+     11
+    ],
+    "Web Attack XSS": [
+     0.9473684210526315,
+     19
+    ]
+   }
+  }
+ },
+ "seconds": 1226
+}

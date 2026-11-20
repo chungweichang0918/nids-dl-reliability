@@ -1,0 +1,49 @@
+{
+ "setting": "drop_top3",
+ "dropped": [
+  "Packet Length Variance",
+  "Destination Port",
+  "RST Flag Count"
+ ],
+ "seed": 1,
+ "accuracy": 0.980495560969285,
+ "detection_rate": 0.9431390709291148,
+ "false_alarm_rate": 0.0026481225464758396,
+ "macro_f1": 0.976911427238867,
+ "detection_by_attack": {
+  "Botnet": [
+   0.0,
+   736
+  ],
+  "DDoS": [
+   0.995900950138737,
+   95144
+  ],
+  "Infiltration": [
+   0.0,
+   36
+  ],
+  "Infiltration Portscan": [
+   0.7660700842662522,
+   41179
+  ],
+  "PortScan": [
+   0.977311851688369,
+   90620
+  ],
+  "Web Attack Brute Force": [
+   0.0,
+   73
+  ],
+  "Web Attack SQL Injection": [
+   0.07692307692307693,
+   13
+  ],
+  "Web Attack XSS": [
+   0.0,
+   18
+  ]
+ },
+ "collapses": 0,
+ "seconds": 66
+}

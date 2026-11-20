@@ -1,0 +1,16 @@
+{
+ "dataset": "unsw",
+ "task": "multi",
+ "model": "XGB",
+ "trial": 16,
+ "hp": {
+  "n_estimators": 400,
+  "max_depth": 3,
+  "learning_rate": 0.3,
+  "subsample": 0.7,
+  "colsample_bytree": 0.8,
+  "min_child_weight": 1
+ },
+ "score": 0.8349670290500802,
+ "seconds": 48
+}

@@ -1,0 +1,1 @@
+{"interp": "trees", "task": "binary", "model": "XGB", "seed": 2, "validation": 99.90871204604088, "KDDTest+": 78.97888573456352, "KDDTest-21": 60.0084388185654}

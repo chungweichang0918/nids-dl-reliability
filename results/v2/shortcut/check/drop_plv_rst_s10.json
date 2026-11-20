@@ -1,0 +1,48 @@
+{
+ "setting": "drop_plv_rst",
+ "dropped": [
+  "Packet Length Variance",
+  "RST Flag Count"
+ ],
+ "seed": 10,
+ "accuracy": 0.8296695122866637,
+ "detection_rate": 0.4523152151488682,
+ "false_alarm_rate": 5.7438708936263794e-05,
+ "macro_f1": 0.7564146398796718,
+ "detection_by_attack": {
+  "Botnet": [
+   0.0,
+   736
+  ],
+  "DDoS": [
+   0.9838875809299588,
+   95144
+  ],
+  "Infiltration": [
+   0.0,
+   36
+  ],
+  "Infiltration Portscan": [
+   0.06447461084533379,
+   41179
+  ],
+  "PortScan": [
+   0.07481792098874421,
+   90620
+  ],
+  "Web Attack Brute Force": [
+   0.0,
+   73
+  ],
+  "Web Attack SQL Injection": [
+   0.0,
+   13
+  ],
+  "Web Attack XSS": [
+   0.0,
+   18
+  ]
+ },
+ "collapses": 0,
+ "seconds": 65
+}

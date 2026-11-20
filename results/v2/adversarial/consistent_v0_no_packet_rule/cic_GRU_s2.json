@@ -1,0 +1,64 @@
+{
+ "dataset": "cic",
+ "model": "GRU",
+ "seed": 2,
+ "eps": [
+  0.1,
+  0.25,
+  0.5,
+  1.0,
+  2.0
+ ],
+ "n_primary": 11,
+ "derived": [
+  "Fwd Packet Length Mean",
+  "Avg Fwd Segment Size",
+  "Packet Length Mean",
+  "Average Packet Size",
+  "Flow Bytes/s",
+  "Flow Packets/s",
+  "Fwd Packets/s",
+  "Bwd Packets/s",
+  "Down/Up Ratio",
+  "Fwd IAT Mean",
+  "Flow IAT Mean",
+  "Max Packet Length",
+  "PSH Flag Count",
+  "URG Flag Count"
+ ],
+ "self_check_max_abs": 7.152557373046875e-07,
+ "standard": {
+  "pool": 2000,
+  "pgd": [
+   0.242,
+   0.3615,
+   0.6755,
+   0.802,
+   0.8555
+  ],
+  "rs": [
+   0.3935,
+   0.7645,
+   0.9955,
+   1.0,
+   1.0
+  ]
+ },
+ "advtrained": {
+  "pool": 2000,
+  "pgd": [
+   0.145,
+   0.184,
+   0.293,
+   0.2125,
+   0.3465
+  ],
+  "rs": [
+   0.3245,
+   0.5545,
+   0.747,
+   0.7085,
+   0.7875
+  ]
+ }
+}

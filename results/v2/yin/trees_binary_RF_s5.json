@@ -1,0 +1,1 @@
+{"interp": "trees", "task": "binary", "model": "RF", "seed": 5, "validation": 99.88886683865846, "KDDTest+": 76.6722853087296, "KDDTest-21": 55.620253164556964}

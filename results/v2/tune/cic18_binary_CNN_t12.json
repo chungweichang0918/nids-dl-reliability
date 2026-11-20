@@ -1,0 +1,26 @@
+{
+ "dataset": "cic18",
+ "task": "binary",
+ "model": "CNN",
+ "trial": 12,
+ "hp": {
+  "filters_1": 8,
+  "kernel_size_1": 5,
+  "dropout_1": 0.5,
+  "filters_2": 32,
+  "kernel_size_2": 7,
+  "dropout_2": 0.4,
+  "dense_units": 64,
+  "lr": 0.003,
+  "clipnorm": null
+ },
+ "score": 0.9950329661369324,
+ "val_accuracy": [
+  0.9913432598114014,
+  0.9951753616333008,
+  0.9950329661369324
+ ],
+ "collapses": 0,
+ "seconds": 18,
+ "epochs": 3
+}

@@ -1,0 +1,16 @@
+{
+ "dataset": "unsw",
+ "task": "binary",
+ "model": "XGB",
+ "trial": 6,
+ "hp": {
+  "n_estimators": 100,
+  "max_depth": 3,
+  "learning_rate": 0.3,
+  "subsample": 0.7,
+  "colsample_bytree": 1.0,
+  "min_child_weight": 5
+ },
+ "score": 0.9525931206558546,
+ "seconds": 1
+}

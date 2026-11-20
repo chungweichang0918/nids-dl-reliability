@@ -1,0 +1,69 @@
+{
+ "dataset": "nsl",
+ "condition": "default",
+ "task": "binary",
+ "model": "XGB",
+ "seed": 5,
+ "hp": {
+  "n_estimators": 100,
+  "max_depth": 6,
+  "learning_rate": 0.3,
+  "subsample": 1.0,
+  "colsample_bytree": 1.0,
+  "min_child_weight": 1
+ },
+ "val_accuracy": 0.9991565786862473,
+ "tests": {
+  "random": {
+   "accuracy": 0.9989283588013494,
+   "macro_f1": 0.9989237429141543,
+   "recall": {
+    "abnormal": 0.9988108383589569,
+    "normal": 0.999031440917896
+   },
+   "support": {
+    "abnormal": 11773,
+    "normal": 13422
+   },
+   "confusion_matrix": [
+    [
+     11759,
+     14
+    ],
+    [
+     13,
+     13409
+    ]
+   ],
+   "detection_rate": 0.9988108383589569,
+   "false_alarm_rate": 0.0009685590821040257
+  },
+  "official": {
+   "accuracy": 0.794180269694819,
+   "macro_f1": 0.7937953639550416,
+   "recall": {
+    "abnormal": 0.6596275227927998,
+    "normal": 0.9719905262073937
+   },
+   "support": {
+    "abnormal": 12833,
+    "normal": 9711
+   },
+   "confusion_matrix": [
+    [
+     8465,
+     4368
+    ],
+    [
+     272,
+     9439
+    ]
+   ],
+   "detection_rate": 0.6596275227927998,
+   "false_alarm_rate": 0.02800947379260632,
+   "detection_seen": 0.7743036441704283,
+   "detection_unseen": 0.3818666666666667
+  }
+ },
+ "seconds": 2
+}

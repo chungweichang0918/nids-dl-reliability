@@ -1,0 +1,182 @@
+{
+ "dataset": "cic18",
+ "model": "CNN",
+ "seed": 3,
+ "hp": {
+  "filters_1": 64,
+  "kernel_size_1": 3,
+  "dropout_1": 0.5,
+  "filters_2": 32,
+  "kernel_size_2": 7,
+  "dropout_2": 0.1,
+  "dense_units": 50,
+  "lr": 0.003,
+  "clipnorm": null
+ },
+ "eps": 1.0,
+ "steps": 3,
+ "epochs": 12,
+ "threat": "consistent",
+ "val_accuracy": [
+  0.9959166322895966,
+  0.9969280510609427,
+  0.9970348468318302,
+  0.9975185688529087,
+  0.9985572100756575,
+  0.9985676802492739,
+  0.9985257995548082,
+  0.9982242585546554,
+  0.998435756061707,
+  0.9983519946727757,
+  0.9982828915269073,
+  0.9986954163673942
+ ],
+ "collapses": 0,
+ "seconds": 2264,
+ "tests": {
+  "random": {
+   "accuracy": 0.9986748976019164,
+   "macro_f1": 0.998625751232816,
+   "recall": {
+    "abnormal": 0.9972224744327327,
+    "normal": 0.9996672616479572
+   },
+   "support": {
+    "abnormal": 242302,
+    "normal": 354633
+   },
+   "confusion_matrix": [
+    [
+     241629,
+     673
+    ],
+    [
+     118,
+     354515
+    ]
+   ],
+   "detection_rate": 0.9972224744327327,
+   "false_alarm_rate": 0.0003327383520428384,
+   "detection_by_attack": {
+    "Botnet Ares": [
+     0.999964875307341,
+     28470
+    ],
+    "DDoS-HOIC": [
+     1.0,
+     59902
+    ],
+    "DDoS-LOIC-HTTP": [
+     0.999965393732805,
+     57793
+    ],
+    "DDoS-LOIC-UDP": [
+     1.0,
+     501
+    ],
+    "DoS GoldenEye": [
+     1.0,
+     4552
+    ],
+    "DoS Hulk": [
+     0.9999334730399494,
+     60126
+    ],
+    "DoS Slowloris": [
+     0.9943661971830986,
+     1420
+    ],
+    "Infiltration Communication Victim Attacker": [
+     0.8863636363636364,
+     44
+    ],
+    "Infiltration Dropbox Download": [
+     0.13333333333333333,
+     15
+    ],
+    "Infiltration NMAP Portscan": [
+     0.939446533603317,
+     10371
+    ],
+    "SSH-BruteForce": [
+     1.0,
+     19056
+    ],
+    "Web Attack Brute Force": [
+     1.0,
+     22
+    ],
+    "Web Attack SQL": [
+     0.0,
+     11
+    ],
+    "Web Attack XSS": [
+     0.9473684210526315,
+     19
+    ]
+   }
+  }
+ },
+ "robustness": {
+  "pool": 2000,
+  "clean_detection": 0.9972224744327327,
+  "eps": [
+   0.1,
+   0.25,
+   0.5,
+   1.0,
+   2.0
+  ],
+  "pgd": {
+   "realistic": [
+    0.0005,
+    0.001,
+    0.001,
+    0.0235,
+    0.372
+   ],
+   "consistent": [
+    0.0,
+    0.0,
+    0.0,
+    0.0005,
+    0.0005
+   ],
+   "consistent_notime": [
+    0.0,
+    0.0005,
+    0.0005,
+    0.0,
+    0.001
+   ]
+  },
+  "rs": {
+   "realistic": [
+    0.0005,
+    0.001,
+    0.001,
+    0.0805,
+    0.927
+   ],
+   "consistent": [
+    0.001,
+    0.0005,
+    0.0005,
+    0.001,
+    0.003
+   ],
+   "consistent_notime": [
+    0.001,
+    0.0005,
+    0.0005,
+    0.0015,
+    0.0025
+   ]
+  },
+  "grad_norm": {
+   "realistic": 7.347894668579102,
+   "consistent": 7.272596836090088,
+   "consistent_notime": 6.243380546569824
+  }
+ }
+}

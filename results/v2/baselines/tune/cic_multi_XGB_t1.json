@@ -1,0 +1,16 @@
+{
+ "dataset": "cic",
+ "task": "multi",
+ "model": "XGB",
+ "trial": 1,
+ "hp": {
+  "n_estimators": 200,
+  "max_depth": 6,
+  "learning_rate": 0.03,
+  "subsample": 0.7,
+  "colsample_bytree": 0.8,
+  "min_child_weight": 5
+ },
+ "score": 0.9953933175927027,
+ "seconds": 65
+}

@@ -1,0 +1,47 @@
+{
+ "setting": "drop_port",
+ "dropped": [
+  "Destination Port"
+ ],
+ "seed": 9,
+ "accuracy": 0.8424304460867607,
+ "detection_rate": 0.49334778925374967,
+ "false_alarm_rate": 5.34774186647935e-05,
+ "macro_f1": 0.7790331615296668,
+ "detection_by_attack": {
+  "Botnet": [
+   0.0,
+   736
+  ],
+  "DDoS": [
+   0.9992642731018246,
+   95144
+  ],
+  "Infiltration": [
+   0.0,
+   36
+  ],
+  "Infiltration Portscan": [
+   9.713689016246146e-05,
+   41179
+  ],
+  "PortScan": [
+   0.19108364599426175,
+   90620
+  ],
+  "Web Attack Brute Force": [
+   0.0,
+   73
+  ],
+  "Web Attack SQL Injection": [
+   0.0,
+   13
+  ],
+  "Web Attack XSS": [
+   0.0,
+   18
+  ]
+ },
+ "collapses": 0,
+ "seconds": 67
+}

@@ -1,0 +1,56 @@
+{
+ "cic18b/binary/RF": {
+  "n": 20,
+  "score": 0.9999518583715152,
+  "paper_score": 0.9999372065715416,
+  "trial": 11,
+  "hp": {
+   "n_estimators": 300,
+   "max_depth": null,
+   "min_samples_leaf": 1,
+   "max_features": 0.5,
+   "max_samples": 1.0
+  }
+ },
+ "cic18b/binary/XGB": {
+  "n": 20,
+  "score": 0.999964417057207,
+  "paper_score": 0.999964417057207,
+  "trial": 0,
+  "hp": {
+   "n_estimators": 100,
+   "max_depth": 6,
+   "learning_rate": 0.3,
+   "subsample": 1.0,
+   "colsample_bytree": 1.0,
+   "min_child_weight": 1
+  }
+ },
+ "cic18b/multi/RF": {
+  "n": 20,
+  "score": 0.9999413928001055,
+  "paper_score": 0.9999413928001055,
+  "trial": 0,
+  "hp": {
+   "n_estimators": 100,
+   "max_depth": null,
+   "min_samples_leaf": 1,
+   "max_features": "sqrt",
+   "max_samples": 1.0
+  }
+ },
+ "cic18b/multi/XGB": {
+  "n": 20,
+  "score": 0.999960230828643,
+  "paper_score": 0.999723708914783,
+  "trial": 1,
+  "hp": {
+   "n_estimators": 200,
+   "max_depth": 9,
+   "learning_rate": 0.1,
+   "subsample": 1.0,
+   "colsample_bytree": 0.5,
+   "min_child_weight": 1
+  }
+ }
+}

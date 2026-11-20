@@ -1,0 +1,146 @@
+{
+ "dataset": "cic18",
+ "model": "DNN",
+ "seed": 1,
+ "hp": {
+  "units_1": 50,
+  "units_2": 50,
+  "lr": 0.003,
+  "clipnorm": 1.0
+ },
+ "eps": 1.0,
+ "steps": 3,
+ "epochs": 12,
+ "val_accuracy": [
+  0.9973552341444926,
+  0.9983687469505619,
+  0.9986095609437395,
+  0.9990095215758867,
+  0.9989090079091691,
+  0.9991225994509441,
+  0.9994262344858202,
+  0.9991623861106865,
+  0.9991163173467742,
+  0.9989550766730814,
+  0.9991267875203906,
+  0.9988315286244076
+ ],
+ "collapses": 0,
+ "seconds": 19,
+ "tests": {
+  "random": {
+   "accuracy": 0.9988206421134629,
+   "macro_f1": 0.9987769084566042,
+   "recall": {
+    "abnormal": 0.9974205743246032,
+    "normal": 0.9997772344931238
+   },
+   "support": {
+    "abnormal": 242302,
+    "normal": 354633
+   },
+   "confusion_matrix": [
+    [
+     241677,
+     625
+    ],
+    [
+     79,
+     354554
+    ]
+   ],
+   "detection_rate": 0.9974205743246032,
+   "false_alarm_rate": 0.0002227655068761658,
+   "detection_by_attack": {
+    "Botnet Ares": [
+     0.9999297506146821,
+     28470
+    ],
+    "DDoS-HOIC": [
+     1.0,
+     59902
+    ],
+    "DDoS-LOIC-HTTP": [
+     1.0,
+     57793
+    ],
+    "DDoS-LOIC-UDP": [
+     1.0,
+     501
+    ],
+    "DoS GoldenEye": [
+     1.0,
+     4552
+    ],
+    "DoS Hulk": [
+     1.0,
+     60126
+    ],
+    "DoS Slowloris": [
+     0.9992957746478873,
+     1420
+    ],
+    "Infiltration Communication Victim Attacker": [
+     1.0,
+     44
+    ],
+    "Infiltration Dropbox Download": [
+     0.13333333333333333,
+     15
+    ],
+    "Infiltration NMAP Portscan": [
+     0.9458104329380002,
+     10371
+    ],
+    "SSH-BruteForce": [
+     1.0,
+     19056
+    ],
+    "Web Attack Brute Force": [
+     0.0,
+     22
+    ],
+    "Web Attack SQL": [
+     0.45454545454545453,
+     11
+    ],
+    "Web Attack XSS": [
+     0.0,
+     19
+    ]
+   }
+  }
+ },
+ "robustness": {
+  "pool": 2000,
+  "clean_detection": 0.9974205743246032,
+  "eps": [
+   0.1,
+   0.25,
+   0.5,
+   1.0,
+   2.0
+  ],
+  "pgd": {
+   "realistic": [
+    0.0,
+    0.0,
+    0.0,
+    0.0005,
+    0.0015
+   ]
+  },
+  "rs": {
+   "realistic": [
+    0.0,
+    0.0,
+    0.0,
+    0.0005,
+    0.002
+   ]
+  },
+  "grad_norm": {
+   "realistic": 20.855087280273438
+  }
+ }
+}

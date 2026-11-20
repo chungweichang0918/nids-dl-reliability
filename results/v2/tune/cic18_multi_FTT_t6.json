@@ -1,0 +1,26 @@
+{
+ "dataset": "cic18",
+ "task": "multi",
+ "model": "FTT",
+ "trial": 6,
+ "hp": {
+  "n_blocks": 2,
+  "d_token": 128,
+  "attention_dropout": 0.3,
+  "ffn_dropout": 0.3,
+  "residual_dropout": 0.1,
+  "ffn_factor": 1.3333333333333333,
+  "weight_decay": 1e-05,
+  "lr": 0.001,
+  "clipnorm": null
+ },
+ "score": 0.9992398619651794,
+ "val_accuracy": [
+  0.998039960861206,
+  0.9988064169883728,
+  0.9992398619651794
+ ],
+ "collapses": 0,
+ "seconds": 220,
+ "epochs": 3
+}

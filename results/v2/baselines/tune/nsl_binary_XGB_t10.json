@@ -1,0 +1,16 @@
+{
+ "dataset": "nsl",
+ "task": "binary",
+ "model": "XGB",
+ "trial": 10,
+ "hp": {
+  "n_estimators": 200,
+  "max_depth": 6,
+  "learning_rate": 0.03,
+  "subsample": 1.0,
+  "colsample_bytree": 0.8,
+  "min_child_weight": 5
+ },
+ "score": 0.9980154792617583,
+ "seconds": 3
+}

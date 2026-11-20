@@ -1,0 +1,15 @@
+{
+ "dataset": "unsw",
+ "task": "binary",
+ "model": "RF",
+ "trial": 4,
+ "hp": {
+  "n_estimators": 200,
+  "max_depth": 40,
+  "min_samples_leaf": 5,
+  "max_features": "sqrt",
+  "max_samples": 0.6
+ },
+ "score": 0.9550169310283372,
+ "seconds": 9
+}

@@ -1,0 +1,47 @@
+{
+ "setting": "drop_rst",
+ "dropped": [
+  "RST Flag Count"
+ ],
+ "seed": 8,
+ "accuracy": 0.8271814713970834,
+ "detection_rate": 0.44430885922596447,
+ "false_alarm_rate": 5.5458063800584156e-05,
+ "macro_f1": 0.7518850315370467,
+ "detection_by_attack": {
+  "Botnet": [
+   0.0,
+   736
+  ],
+  "DDoS": [
+   0.9956066593794669,
+   95144
+  ],
+  "Infiltration": [
+   0.0,
+   36
+  ],
+  "Infiltration Portscan": [
+   0.043735884795648265,
+   41179
+  ],
+  "PortScan": [
+   0.05180975502096667,
+   90620
+  ],
+  "Web Attack Brute Force": [
+   0.0,
+   73
+  ],
+  "Web Attack SQL Injection": [
+   0.0,
+   13
+  ],
+  "Web Attack XSS": [
+   0.0,
+   18
+  ]
+ },
+ "collapses": 0,
+ "seconds": 70
+}

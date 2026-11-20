@@ -1,0 +1,101 @@
+{
+ "dataset": "cic",
+ "condition": "dedup",
+ "task": "binary",
+ "model": "XGB",
+ "seed": 1,
+ "hp": {
+  "n_estimators": 100,
+  "max_depth": 6,
+  "learning_rate": 0.3,
+  "subsample": 1.0,
+  "colsample_bytree": 0.8,
+  "min_child_weight": 1
+ },
+ "val_accuracy": 0.9991743332741189,
+ "tests": {
+  "random": {
+   "accuracy": 0.9992133643984339,
+   "macro_f1": 0.9986094731261566,
+   "recall": {
+    "abnormal": 0.998589943950272,
+    "normal": 0.9993413640278606
+   },
+   "support": {
+    "abnormal": 85103,
+    "normal": 414493
+   },
+   "confusion_matrix": [
+    [
+     84983,
+     120
+    ],
+    [
+     273,
+     414220
+    ]
+   ],
+   "detection_rate": 0.998589943950272,
+   "false_alarm_rate": 0.000658635972139443,
+   "detection_by_attack": {
+    "Botnet": [
+     0.7101449275362319,
+     345
+    ],
+    "DDoS": [
+     0.9999611801242236,
+     25760
+    ],
+    "DoS GoldenEye": [
+     0.9994982438534872,
+     1993
+    ],
+    "DoS Hulk": [
+     0.9998836803536117,
+     34388
+    ],
+    "DoS Slowhttptest": [
+     0.9953617810760668,
+     1078
+    ],
+    "DoS Slowloris": [
+     0.9963201471941122,
+     1087
+    ],
+    "FTP-Patator": [
+     0.9991803278688525,
+     1220
+    ],
+    "Heartbleed": [
+     1.0,
+     1
+    ],
+    "Infiltration": [
+     1.0,
+     6
+    ],
+    "PortScan": [
+     0.999944936952811,
+     18161
+    ],
+    "SSH-Patator": [
+     1.0,
+     641
+    ],
+    "Web Attack Brute Force": [
+     0.9963503649635036,
+     274
+    ],
+    "Web Attack SQL Injection": [
+     1.0,
+     6
+    ],
+    "Web Attack XSS": [
+     0.986013986013986,
+     143
+    ]
+   }
+  }
+ },
+ "seconds": 9
+}

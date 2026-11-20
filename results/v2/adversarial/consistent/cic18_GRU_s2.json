@@ -1,0 +1,92 @@
+{
+ "dataset": "cic18",
+ "model": "GRU",
+ "seed": 2,
+ "eps": [
+  0.1,
+  0.25,
+  0.5,
+  1.0,
+  2.0
+ ],
+ "n_primary": 11,
+ "derived": [
+  "Fwd Packet Length Mean",
+  "Avg Fwd Segment Size",
+  "Packet Length Mean",
+  "Average Packet Size",
+  "Flow Bytes/s",
+  "Flow Packets/s",
+  "Fwd Packets/s",
+  "Bwd Packets/s",
+  "Down/Up Ratio",
+  "Fwd IAT Mean",
+  "Flow IAT Mean",
+  "Max Packet Length",
+  "PSH Flag Count",
+  "URG Flag Count"
+ ],
+ "self_check_max_abs": 4.76837158203125e-07,
+ "standard": {
+  "pool": 2000,
+  "pgd": [
+   0.3985,
+   0.607,
+   0.745,
+   0.8675,
+   0.9015
+  ],
+  "rs": [
+   0.6885,
+   0.9655,
+   0.992,
+   0.996,
+   0.9975
+  ],
+  "pgd_notime": [
+   0.2925,
+   0.4875,
+   0.583,
+   0.763,
+   0.85
+  ],
+  "rs_notime": [
+   0.6675,
+   0.9675,
+   0.993,
+   0.996,
+   0.9965
+  ]
+ },
+ "advtrained": {
+  "pool": 2000,
+  "pgd": [
+   0.3625,
+   0.5515,
+   0.5795,
+   0.6,
+   0.701
+  ],
+  "rs": [
+   0.634,
+   0.813,
+   0.929,
+   0.952,
+   0.987
+  ],
+  "pgd_notime": [
+   0.3035,
+   0.4445,
+   0.4535,
+   0.492,
+   0.5395
+  ],
+  "rs_notime": [
+   0.6045,
+   0.8115,
+   0.8455,
+   0.945,
+   0.99
+  ]
+ }
+}

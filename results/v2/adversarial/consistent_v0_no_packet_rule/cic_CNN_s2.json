@@ -1,0 +1,64 @@
+{
+ "dataset": "cic",
+ "model": "CNN",
+ "seed": 2,
+ "eps": [
+  0.1,
+  0.25,
+  0.5,
+  1.0,
+  2.0
+ ],
+ "n_primary": 11,
+ "derived": [
+  "Fwd Packet Length Mean",
+  "Avg Fwd Segment Size",
+  "Packet Length Mean",
+  "Average Packet Size",
+  "Flow Bytes/s",
+  "Flow Packets/s",
+  "Fwd Packets/s",
+  "Bwd Packets/s",
+  "Down/Up Ratio",
+  "Fwd IAT Mean",
+  "Flow IAT Mean",
+  "Max Packet Length",
+  "PSH Flag Count",
+  "URG Flag Count"
+ ],
+ "self_check_max_abs": 7.152557373046875e-07,
+ "standard": {
+  "pool": 2000,
+  "pgd": [
+   0.2135,
+   0.274,
+   0.464,
+   0.7185,
+   0.783
+  ],
+  "rs": [
+   0.348,
+   0.4745,
+   0.843,
+   0.988,
+   0.999
+  ]
+ },
+ "advtrained": {
+  "pool": 2000,
+  "pgd": [
+   0.234,
+   0.2595,
+   0.3285,
+   0.433,
+   0.566
+  ],
+  "rs": [
+   0.3505,
+   0.3835,
+   0.5235,
+   0.7955,
+   0.989
+  ]
+ }
+}

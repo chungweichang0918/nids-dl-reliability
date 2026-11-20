@@ -1,0 +1,15 @@
+{
+ "dataset": "nsl",
+ "task": "binary",
+ "model": "RF",
+ "trial": 15,
+ "hp": {
+  "n_estimators": 200,
+  "max_depth": 20,
+  "min_samples_leaf": 5,
+  "max_features": "log2",
+  "max_samples": 0.6
+ },
+ "score": 0.9954356023020441,
+ "seconds": 3
+}
