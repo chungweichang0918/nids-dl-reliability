@@ -694,8 +694,10 @@ def methodology(P):
            "such as duration, source bytes, and connection counts; 13 forward-direction features for "
            "the two CIC datasets, such as forward packets, forward bytes, inter-arrival times, and the initial "
            "TCP window); "
-           "these can only increase, because traffic that has been sent cannot be withdrawn, count features must "
-           "remain non-negative integers, and all values must stay within the range observed in training. "
+           "all of them except the initial TCP window can only increase, because traffic that has been sent "
+           "cannot be withdrawn, whereas the window is chosen by the sender and may be raised or lowered; count "
+           "features must remain non-negative integers, and all values must stay within the range observed in "
+           "training (for the TCP window, also within 0–65,535). "
            "Perturbations are bounded in the L∞ norm, measured in standard deviations, with "
            "ε ∈ {0.1, 0.25, 0.5, 1, 2}. We run PGD [@madry2018] with 20 steps and a random start, and a "
            "gradient-free random search with 300 queries; a gradient-free attack that is much stronger than PGD "
@@ -746,7 +748,10 @@ def methodology(P):
     P.subsection("Reproducibility Artifact")
     P.para("We release the complete code, the search spaces and selected hyperparameters, all seeds, the "
            "preprocessing scripts with download instructions for the datasets, and the raw per-run results "
-           "(training curves, gradient norms, and all metrics). {{Repository URL / archive DOI}}")
+           "(training curves, gradient norms, and all metrics) at "
+           "https://github.com/chungweichang0918/nids-dl-reliability, archived on Zenodo under DOI "
+           "10.5281/zenodo.24391814. The trained model weights are archived separately under DOI "
+           "10.5281/zenodo.24391892.")
 
 
 def scaler_sentence():
