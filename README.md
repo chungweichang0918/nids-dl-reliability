@@ -1,6 +1,6 @@
 # nids-dl-reliability
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24391814.svg)](https://doi.org/10.5281/zenodo.24391814)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24391813.svg)](https://doi.org/10.5281/zenodo.24391813)
 
 Code and raw results for the paper
 

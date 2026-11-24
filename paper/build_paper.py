@@ -1,4 +1,4 @@
-﻿"""英文期刊論文草稿 (IEEE Access 格式)。
+"""英文期刊論文草稿 (IEEE Access 格式)。
 
 全文 (緒論到結論、RQ1–RQ5) 已寫完；數字全部由結果檔即時計算。
 仍以黃色標示的只有程式庫網址 (尚未公開)。
@@ -750,7 +750,7 @@ def methodology(P):
            "preprocessing scripts with download instructions for the datasets, and the raw per-run results "
            "(training curves, gradient norms, and all metrics) at "
            "https://github.com/chungweichang0918/nids-dl-reliability, archived on Zenodo under DOI "
-           "10.5281/zenodo.24391814. The trained model weights are archived separately under DOI "
+           "10.5281/zenodo.24391813. The trained model weights are archived separately under DOI "
            "10.5281/zenodo.24391892.")
 
 
