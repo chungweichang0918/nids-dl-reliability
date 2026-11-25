@@ -8,7 +8,7 @@ REFS = {
                  "doi: 10.1109/EuroSP60621.2024.00042.",
     "lanvin2022": "M. Lanvin, P.-F. Gimenez, Y. Han, F. Majorczyk, L. Mé, and E. Totel, “Errors in the CICIDS2017 "
                   "dataset and the significant differences in detection performances it makes,” in *Proc. Int. Conf. "
-                  "Risks Secur. Internet Syst. (CRiSIS)*, LNCS, Springer, 2022, pp. 18–33, "
+                  "Risks Secur. Internet Syst. (CRiSIS 2022)*, LNCS, Springer, 2023, pp. 18–33, "
                   "doi: 10.1007/978-3-031-31108-6_2.",
     "dhooge2022": "L. D’hooge, M. Verkerken, B. Volckaert, T. Wauters, and F. De Turck, “Establishing the "
                   "contaminating effect of metadata feature inclusion in machine-learned network intrusion detection "
